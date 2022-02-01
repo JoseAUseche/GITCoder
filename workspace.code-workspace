@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "pwa-msedge",
+				"request": "launch",
+				"name": "Open Index-26-12-2021.html",
+				"file": "d:\\Documents\\CERTIFICATIONS  2021\\CODERHOUSE\\DESARROLLO WEB\\Index\\Index-26-12-2021.html"
+			}
+		]
+	}
+}

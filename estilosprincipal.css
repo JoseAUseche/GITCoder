@@ -1,0 +1,413 @@
+/*Reseteo Css*/
+
+*{
+  padding: 0%;
+  margin: 0%;
+  
+}
+ /*Portada*/ 
+ /*Cuerpo a solo color*/  
+
+body 
+{ background-color: orange; 
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-weight: bold;*/
+  width:100%;
+  height: 100vh;
+}
+
+/* ACA VA LA PARTE PARA MÓVILES */
+@media (min-width:480)
+{
+
+}
+
+/* ACA VA LA PARTE DE TABLETS Y SMARTPHONES DE PANTALLA RANDE */
+
+@media (min-width: 481px) and (max-width: 1023px)
+{
+
+}
+
+
+/* ESTILOS PARA DESKTOP */
+@media (min-width: 1024px)
+{
+
+  
+  #gridPrincipal
+  {
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 7% 5% 5% 20% 47% auto;
+    grid-row-gap: 2%;
+    grid-template-areas:
+    "titulo titulo  titulo"
+    "s-titulo s-titulo s-titulo"
+    "s-titulo2 s-titulo2 s-titulo2"
+    "el-menu el-menu el-menu"
+    "enlaces-img enlaces-img  escudo-himno"
+    "el-pie el-pie el-pie"
+    ;
+  }
+
+  .el-titulo
+  {
+    grid-area:titulo;
+  }
+
+  .el-s-titulo
+  {
+    grid-area: s-titulo;
+  }
+
+  .el-s-titulo2
+  {
+    grid-area: s-titulo2;
+  }
+
+
+  .enlaces-img
+  {
+    grid-area:enlaces-img;
+  }
+
+  .escudohimno
+  {
+    grid-area:escudo-himno;
+  }
+
+
+  /*Titulos&subtitulos*/
+  header 
+  {
+    text-align: center;
+  }
+
+  h1, h2 , h3
+  {
+    text-align: center;
+  }
+
+  /*Display lista*/
+  .menuprincipal-flex {
+  display: flex;
+  grid-area:el-menu;
+    justify-content: center;
+  }
+
+  .menuprincipal-flex
+{
+ grid-area:el-menu;
+ display:inline-block;
+ text-align: center;
+ justify-content:center;
+ align-items: center;
+ align-content: center;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ background-color: antiquewhite;
+ width: 100%;
+ height: 15%;
+ border: groove 8px;
+}
+
+  .menuprincipal-flex a{
+  text-align: center;
+  color: rgb(134, 39, 134);
+  text-decoration: none;
+  width: 60%;
+  height: 3%;
+  margin:1%;
+  }
+
+  .imgBlogs 
+  {
+    width: 40%;
+    height: 120px;
+  }
+
+  .escudo 
+  {
+    position: absolute;
+    width: 30%;
+    top: 45%;
+    text-align: start;
+    left: 29%;
+    height: 47%;
+  }
+
+  .himno
+  {
+    position: absolute;
+    width: 30%;
+    top: 47%;
+    text-align: right;
+    left: 60%;
+    height: 45%;
+  }
+
+  /*Pie de pagina*/
+  footer
+  {
+    grid-area:el-pie;
+    margin: 0%;
+    text-align: center;
+    justify-content: center;
+    left: -5%;
+  }
+  /*......El codigo anterior pagina principal..index...*/
+
+
+
+
+
+  /*....Menu pagina 1 programas......*/
+  /*Titulos&subtitulos*/
+
+  .programastitulo1, .programastitulo2, .programastitulo3  
+  {
+    text-align: center;
+  }
+
+  .colorprogramas
+  {
+    background-color: orange; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  #gridprogramasareas
+  {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 20% 20% 20%;
+  grid-row-gap: 2%;
+  grid-template-areas:
+  "programa1"
+  "programa2" 
+  "programa3"  
+  "programa4";
+
+  }
+
+  .programa1
+  {
+    grid-area:programa1;
+  }
+
+  .programa2
+  {
+    grid-area:programa2;
+  }
+
+  .programa3
+  {
+    grid-area:programa3;
+  }
+
+
+  .programa4
+  {
+    grid-area:programa4;
+  }
+
+
+  .programa1, .programa2, .programa3, .programa4 
+  {
+  display: block;
+  background-color: antiquewhite;
+  padding: 0%;
+  width: 70%;
+  margin: 2%;
+  height: 5%;
+  border: groove 10px;
+  text-align: justify;
+  }
+
+  .footerprogramas
+  {
+    grid-area:el-pie;
+    margin: 3%;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+
+
+  /*....Menu opcion 2 pagina 2 instructores......*/
+
+  /*Titulos&subtitulos*/
+  .comentariosinstructores
+  {
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 20px;
+  }
+
+  .cuadrocomentarios
+  {
+    position: absolute;
+    width: 480px;
+    top: 260px;
+    text-align: right;
+    right: 70px;
+    left: 700;
+    height: 400px;
+  }
+
+  .profe1, .profe2, .profe3, .profe4 
+  {
+  display: block;
+  background-color: antiquewhite;
+  padding: 43px;
+  width: 200px;
+  margin: 3px;
+  height: 20px;
+  border: groove 10px;
+  }
+
+  .comentariosinstructores2
+  {
+    position: absolute;
+    width: 430px;
+    top: 350px;
+    text-align: justify;
+    left: 550px;
+    height: 380px;
+    font-size: 18px;
+  }
+
+  .pieinstructores
+    {
+      margin: 10px;
+      text-align: center;
+    }
+
+
+
+    /*....Menu opcion 3 proyectos......*/
+
+  /*Titulos&subtitulos*/
+  .comentario1proyectos
+  {
+  text-align: justify;
+  height: 70px;
+  margin-top: 90px;
+  font-size: 18px;
+  }
+
+  .comentario2proyectos
+  {
+  text-align: justify;
+  top: 30px;
+  margin-top: 15px;
+  height: 10px;
+  }
+
+  .proyecto1, .proyecto2, .proyecto3, .proyecto4 
+  {
+    display: inline-table;
+    background-color: antiquewhite;
+    padding: 2px;
+    width: 270px;
+    margin: 15px;
+    height: 17px;
+    border: groove 10px;
+  }
+
+  .cuadrocomentariosproyectos
+  {
+    text-align: start;
+    padding: 30px;
+    position: absolutre;
+    width: 500px;
+    top: 350px;
+    left: 10px;
+    height: 380px;
+  }
+
+  .pieproyectos
+    {
+      margin: -200px;
+      text-align: center;
+    }
+
+    .cuerpoproyectos
+    {  padding: 0%;
+      margin: 0%;
+      box-sizing: content-box;
+      border-bottom: 0ch;
+      height: 100px;
+
+    }
+
+    /*....Menu opcion 4 formulario......*/
+    .margenesformulario
+    { height: 100px;
+    }
+
+    .formulario
+      {
+        position: absolute;
+        width: 500px;
+        top: 200px;
+        text-align: left;
+        left: 10px;
+        height: 380px;
+  }
+
+    .comentario1formularios
+    {  
+      position: absolute;
+    width: 430px;
+    top: 310px;
+    text-align: justify;
+    left: 570px;
+    height: 380px;
+    font-size: 20px;
+    } 
+
+    .escudoformulario
+    {
+      position: absolute;
+      width: 480px;
+      top: 190px;
+      text-align: right;
+      right: 55px;
+      left: 640;
+      height: 480px;
+    }
+    .pieformulario
+    {
+      margin: 550px;
+      text-align: center;
+    }
+
+  /*....Menu opcion 5 contactenos......*/
+
+  .contactenos1, .contactenos2, .contactenos3, .contactenos4, .contactenos5
+  {
+    display: block;
+    background-color: antiquewhite;
+    padding: 30px;
+    width: 360px;
+    margin: 10px;
+    height: 23px;
+    border: groove 10px;
+    text-align: center;
+    }
+
+    .piecontactenos
+    {
+      margin: 30px;
+      text-align: center;
+    }
+
+    /*....Cierre.........................*/
+
+}
+
+
+  
