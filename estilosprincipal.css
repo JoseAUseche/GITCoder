@@ -97,20 +97,20 @@ body
   }
 
   .menuprincipal-flex
-{
- grid-area:el-menu;
- display:inline-block;
- text-align: center;
- justify-content:center;
- align-items: center;
- align-content: center;
- flex-direction: row;
- flex-wrap: nowrap;
- background-color: antiquewhite;
- width: 100%;
- height: 15%;
- border: groove 8px;
-}
+    {
+    grid-area:el-menu;
+    display:inline-block;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 15%;
+    border: groove 8px;
+    }
 
   .menuprincipal-flex a{
   text-align: center;
